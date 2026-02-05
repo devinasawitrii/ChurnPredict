@@ -61,7 +61,9 @@ Features were engineered from multiple data sources.
 - `avg_listening_secs`
 - `active_days`
 - `last_user_log_date`
+- 
 All features were aggregated by user ID (`msno`) and merged into a final dataset. Missing values after merging were filled with zero.
+
 **Final Dataset**
 - File: `final_data.csv`
 - Size: **970,960 rows × 24 features**
