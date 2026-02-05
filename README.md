@@ -93,7 +93,7 @@ Random Forest significantly outperforms Logistic Regression and effectively capt
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 - Churn risk increases near subscription expiration dates
 - Auto-renew significantly reduces churn probability
 - Recent transaction activity is a stronger churn indicator than total payment
@@ -103,7 +103,7 @@ Random Forest significantly outperforms Logistic Regression and effectively capt
 
 ---
 
-## 🎯 Recommendations
+## Recommendations
 - Implement early interventions before subscription expiration
 - Encourage auto-renew activation with incentives
 - Launch re-engagement campaigns for inactive users
