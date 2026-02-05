@@ -79,7 +79,7 @@ Performance on the test set:
 - Recall: **0.885**
 - F1-Score: **0.711**
 - ROC-AUC: **0.964**
-- 
+  
 The model achieves high recall for churn users, making it effective as a baseline model.
 ### Random Forest
 Performance on the test set:
@@ -88,7 +88,7 @@ Performance on the test set:
 - Recall: **0.898**
 - F1-Score: **0.895**
 - ROC-AUC: **1.00**
-- 
+  
 Random Forest significantly outperforms Logistic Regression and effectively captures non-linear relationships between features.
 
 ---
