@@ -23,6 +23,7 @@ The dataset consists of several large tables:
 - `members.csv` – customer demographic information
 - `transactions.csv` – subscription and payment history
 - `user_logs.csv` – daily user activity logs
+
 Target Variable `is_churn`  
 - `1` = churn  
 - `0` = not churn  
