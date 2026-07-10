@@ -20,11 +20,11 @@ The results help companies understand churn behavior and design effective, data-
 Source: KKBOX Churn Prediction Challenge – Kaggle
 www.kaggle.com/competitions/kkbox-churn-prediction-challenge
 
-The dataset consists of several large tables:
-- `train.csv` – customer churn labels (`is_churn`)
-- `members.csv` – customer demographic information
-- `transactions.csv` – subscription and payment history
-- `user_logs.csv` – daily user activity logs
+The dataset consists of four main tables:
+- `train_v2.csv` – customer churn labels (`is_churn`)
+- `members_v3.csv` – customer demographic information
+- `transactions_v2.csv` – subscription and payment history
+- `user_logs_v2.csv` – daily user activity logs
 
 Target Variable `is_churn`  
 - `1` = churn  
