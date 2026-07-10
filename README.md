@@ -80,6 +80,35 @@ After preprocessing, feature engineering, and merging the four original tables, 
 | 8iF/... | 1 | 1 | 0 | 0 | 7 | 2014-01-09 | 1178 | 1 | 10 | 1490 | 30 | 0 | 1 | 2018-01-08 | 4.97 | 1 | 685.10 | 480 | 0.00 | 0.000 | 0.000 | 0 | 0 |
 | K6fj... | 1 | 13 | 35 | female | 7 | 2014-01-25 | 1162 | 1 | 8 | 792 | 30 | 0.125 | 1 | 2017-09-18 | 3.30 | 1 | 181.38 | 16 | 0.00 | 239882.241 | 15992.149 | 15 | 2017-03-31 |
 
+### Feature Description
+
+| Feature | Description |
+|---------|-------------|
+| `msno` | Unique customer identifier. |
+| `is_churn` | Target variable indicating customer churn (1 = churn, 0 = non-churn). |
+| `city` | Customer's registered city code. |
+| `bd` | Customer age. |
+| `gender` | Customer gender. |
+| `registered_via` | Registration channel identifier. |
+| `registration_init_time` | Initial registration date. |
+| `registration_duration` | Number of days since registration. |
+| `long_time_user` | Indicator of whether the customer is a long-term user. |
+| `total_transactions` | Total number of subscription transactions. |
+| `total_payment` | Total amount paid across all transactions. |
+| `avg_plan_days` | Average subscription plan duration (days). |
+| `cancel_rate` | Proportion of cancelled subscriptions. |
+| `auto_renew_rate` | Proportion of transactions with auto-renew enabled. |
+| `last_membership_expire` | Most recent membership expiration date. |
+| `avg_amt_per_day` | Average payment per subscription day. |
+| `autorenew_and_not_cancel` | Indicator that auto-renew was enabled and the subscription was not cancelled. |
+| `membership_duration` | Total membership duration (days). |
+| `days_since_last_transaction` | Days elapsed since the last transaction. |
+| `pct_discount_transactions` | Percentage of discounted transactions. |
+| `total_listening_secs` | Total listening time (seconds). |
+| `avg_listening_secs` | Average listening time per active day (seconds). |
+| `active_days` | Number of days with listening activity. |
+| `last_user_log_date` | Date of the last recorded listening activity. |
+
 ## Machine Learning Models
 
 ### Logistic Regression
