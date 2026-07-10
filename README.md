@@ -18,7 +18,8 @@ The results help companies understand churn behavior and design effective, data-
 
 ## Dataset
 Source: KKBOX Churn Prediction Challenge – Kaggle
-https://www.kaggle.com/competitions/kkbox-churn-prediction-challenge
+www.kaggle.com/competitions/kkbox-churn-prediction-challenge
+
 The dataset consists of several large tables:
 - `train.csv` – customer churn labels (`is_churn`)
 - `members.csv` – customer demographic information
