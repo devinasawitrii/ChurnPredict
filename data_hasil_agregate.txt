@@ -1,15 +1,1 @@
 final_data.csv https://drive.google.com/file/d/1x36i3P1103z0wja6MImACPQfk2waJhRs/view?usp=sharing
-
-## Processed Dataset
-
-After preprocessing, feature engineering, and merging the four original tables, a single dataset (`final_data.csv`) was generated for model development.
-
-### final_data.csv (Preview)
-
-| msno | is_churn | city | bd | gender | registered_via | registration_init_time | registration_duration | long_time_user | total_transactions | total_payment | avg_plan_days | cancel_rate | auto_renew_rate | last_membership_expire | avg_amt_per_day | autorenew_and_not_cancel | membership_duration | days_since_last_transaction | pct_discount_transactions | total_listening_secs | avg_listening_secs | active_days | last_user_log_date |
-|------|----------|------|----|--------|----------------|------------------------|----------------------:|---------------:|-------------------:|--------------:|--------------:|------------:|-----------------:|------------------------|----------------:|--------------------------:|--------------------:|----------------------------:|--------------------------:|---------------------:|-------------------:|------------:|--------------------|
-| ugx0... | 1 | 5 | 28 | male | 3 | 2013-12-23 | 1195 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0.00 | 0 | 0.00 | 0 | 0.00 | 80598.557 | 7327.142 | 11 | 2017-03-29 |
-| f/Nm... | 1 | 13 | 20 | male | 3 | 2013-12-23 | 1195 | 1 | 1 | 180 | 30 | 0 | 0 | 2017-04-11 | 6.00 | 0 | 31.00 | 21 | 0.00 | 6986.509 | 1164.418 | 6 | 2017-03-20 |
-| zLo9... | 1 | 13 | 18 | male | 3 | 2013-12-27 | 1191 | 1 | 2 | 300 | 75 | 0 | 0 | 2017-06-15 | 1.67 | 0 | 48.00 | 18 | 0.00 | 67810.467 | 3390.523 | 20 | 2017-03-31 |
-| 8iF/... | 1 | 1 | 0 | 0 | 7 | 2014-01-09 | 1178 | 1 | 10 | 1490 | 30 | 0 | 1 | 2018-01-08 | 4.97 | 1 | 685.10 | 480 | 0.00 | 0.000 | 0.000 | 0 | 0 |
-| K6fj... | 1 | 13 | 35 | female | 7 | 2014-01-25 | 1162 | 1 | 8 | 792 | 30 | 0.125 | 1 | 2017-09-18 | 3.30 | 1 | 181.38 | 16 | 0.00 | 239882.241 | 15992.149 | 15 | 2017-03-31 |
