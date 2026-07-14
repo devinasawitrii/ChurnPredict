@@ -12,6 +12,7 @@ The project covers the complete big data analytics pipeline:
 Two classification models are implemented:
 - Logistic Regression as a baseline model  
 - XGBoost as an advanced model
+  
 The results help companies understand churn behavior and design effective, data-driven customer retention strategies.
 
 ---
