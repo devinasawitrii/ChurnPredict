@@ -114,42 +114,49 @@ Feature Description
 
 ### Logistic Regression
 Performance on the test set:
-- Accuracy: **0.935**
-- Precision: **0.595**
-- Recall: **0.885**
-- F1-Score: **0.711**
-- ROC-AUC: **0.964**
-  
-The model achieves high recall for churn users, making it effective as a baseline model.
-### Random Forest
+
+- **Accuracy:** 0.929
+- **Precision:** 0.569
+- **Recall:** 0.889
+- **F1-Score:** 0.693
+- **ROC-AUC:** 0.965
+
+Logistic Regression serves as a strong baseline model, achieving high recall for churn prediction. However, its relatively low precision indicates that many non-churn customers are incorrectly classified as churn, making it less suitable for minimizing false positives.
+
+---
+
+### XGBoost
 Performance on the test set:
-- Accuracy: **0.981**
-- Precision: **0.892**
-- Recall: **0.898**
-- F1-Score: **0.895**
-- ROC-AUC: **1.00**
-  
-Random Forest significantly outperforms Logistic Regression and effectively captures non-linear relationships between features.
+
+- **Accuracy:** 0.977
+- **Precision:** 0.807
+- **Recall:** 0.976
+- **F1-Score:** 0.884
+- **ROC-AUC:** 0.996
+
+XGBoost outperforms Logistic Regression across all evaluation metrics. Its ability to model complex non-linear relationships enables more accurate identification of churn customers while maintaining a low false positive rate, making it the preferred model for this project.
 
 ---
 
 ## Key Insights
-- Churn risk increases near subscription expiration dates
-- Auto-renew significantly reduces churn probability
-- Recent transaction activity is a stronger churn indicator than total payment
-- Churn peaks during the customer evaluation phase (90–365 days)
-- Long subscription plans do not always guarantee retention
-- High-value customers who churn have significant financial impact
+
+- **XGBoost achieved the best overall performance**, reaching **97.7% accuracy** and **0.996 ROC-AUC**, demonstrating excellent capability in distinguishing churn and non-churn customers.
+
+- **Subscription renewal behavior is the strongest predictor of customer churn.** Features such as **`autorenew_and_not_cancel`**, **`auto_renew_rate`**, and **`membership_duration`** contribute the most to the prediction, indicating that customers with active auto-renewal and longer subscriptions are much less likely to churn.
+
+- **Transaction history is highly informative.** Features including **`total_payment`**, **`total_transactions`**, **`avg_amt_per_day`**, and **`days_since_last_transaction`** effectively capture purchasing behavior and customer retention patterns.
+
+- **Behavioral features are more predictive than demographic attributes.** Customer activities and subscription behaviors have a much stronger impact on churn prediction than demographic information such as **city**, **gender**, or **registration method**.
 
 ---
 
 ## Recommendations
-- Implement early interventions before subscription expiration
-- Encourage auto-renew activation with incentives
-- Launch re-engagement campaigns for inactive users
-- Provide loyalty programs for mid-term customers
-- Offer more flexible subscription plans
-- Personalize services for highly active users
 
----
+- **Proactively target customers who disable auto-renewal** by offering renewal reminders, personalized discounts, or loyalty incentives before their subscriptions expire.
+
+- **Monitor inactive customers** using features such as **`days_since_last_transaction`** and trigger retention campaigns before prolonged inactivity leads to churn.
+
+- **Improve customer engagement** through personalized music recommendations, playlists, and promotional campaigns to encourage continued platform usage.
+
+- **Deploy the XGBoost model as an early warning system** to identify high-risk customers and support data-driven retention strategies.
 
