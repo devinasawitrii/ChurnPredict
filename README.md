@@ -11,7 +11,7 @@ The project covers the complete big data analytics pipeline:
 - Model evaluation
 Two classification models are implemented:
 - Logistic Regression as a baseline model  
-- Random Forest as an advanced model
+- XGBoost as an advanced model
 The results help companies understand churn behavior and design effective, data-driven customer retention strategies.
 
 ---
