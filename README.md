@@ -110,9 +110,9 @@ Feature Description
 | `active_days` | Number of days with listening activity. |
 | `last_user_log_date` | Date of the last recorded listening activity. |
 
-## Machine Learning Models
+### Machine Learning Models
 
-### Logistic Regression
+#### Logistic Regression
 Performance on the test set:
 
 - **Accuracy:** 0.929
@@ -123,9 +123,7 @@ Performance on the test set:
 
 Logistic Regression serves as a strong baseline model, achieving high recall for churn prediction. However, its relatively low precision indicates that many non-churn customers are incorrectly classified as churn, making it less suitable for minimizing false positives.
 
----
-
-### XGBoost
+#### XGBoost
 Performance on the test set:
 
 - **Accuracy:** 0.977
