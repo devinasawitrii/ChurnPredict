@@ -37,14 +37,14 @@ The dataset contains millions of records (>300 MB) and is highly imbalanced, wit
 
 ## Methodology
 
-### 1️⃣ Data Preprocessing
+### Data Preprocessing
 Key preprocessing steps include:
 - Invalid age values (`≤10` or `>80`) were set as missing values
 - Invalid transaction records were removed
 - Date columns were converted to datetime format
 - A **cut-off date of April 1, 2017** was applied to prevent data leakage
 - Consistent filtering between transaction and user activity data
-### 2️⃣ Feature Engineering
+### Feature Engineering
 Features were engineered from multiple data sources.
 #### Transaction-based Features
 - `total_transactions`
