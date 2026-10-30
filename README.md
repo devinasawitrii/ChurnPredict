@@ -152,7 +152,7 @@ XGBoost outperforms Logistic Regression across all evaluation metrics. Its abili
 
 - **Proactively target customers who disable auto-renewal** by offering renewal reminders, personalized discounts, or loyalty incentives before their subscriptions expire.
 
-- **Monitor inactive customers** using features such as **`days_since_last_transaction`** and trigger retention campaigns before prolonged inactivity leads to churn.
+- **Monitor inactive customers** using features such as **`days_since_last_transaction`** and trigger retention campaigns before prolonged inactivity leads to churn. 
 
 - **Improve customer engagement** through personalized music recommendations, playlists, and promotional campaigns to encourage continued platform usage.
 
